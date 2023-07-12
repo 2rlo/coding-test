@@ -137,12 +137,3 @@ function solution(numbers, hand) {
   }
   return answer;
 }
-
-/*
-[1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5], "right"
-
-L
-R 3
-L 4
-L4 R3 index L1 R0 M1 Length L1 R2
-*/
