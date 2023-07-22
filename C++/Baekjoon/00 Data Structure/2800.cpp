@@ -14,7 +14,7 @@ bool visit[201];
 void dfs(int n, int cnt){
     if(cnt >= 1){
         string temp = "";
-        for(int i=0; i<s.length; i++){
+        for(int i=0; i<s.size(); i++){
             if(!visit[i]) temp+=s[i];
         }
         answer.insert(temp);
@@ -37,7 +37,7 @@ int main() {
 
     cin >> s;
 
-    for(int i=0; i<s.length; i++){
+    for(int i=0; i<s.size(); i++){
         if(s[i] == '(') 
             open.push(i);
         else if (s[i] == ')'){
