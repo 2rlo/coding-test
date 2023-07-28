@@ -30,5 +30,7 @@
 *.exe
 *.out
 *.app
+*.ilk
+*.pdb
 
 C++/Baekjoon/format.cpp
