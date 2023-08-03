@@ -21,10 +21,9 @@ bool sol(char ch){
                     d[i].push_back(ch);
                     return false;
                 }
-                else {
-                    d.push_back("q");
-                }
             }
+            d.push_back("q");
+            return false;
         }
         else if (ch == 'u'){
             for(int i=d.size()-1; i>=0; i--){
@@ -77,7 +76,19 @@ int main() {
         }
     }
 
-    cout << d.size();
+    for(int i=0; i<d.size(); i++){
+        if(d[i].size()%5 != 0){
+            cout << "-1";
+            return 0;
+        }
+    }
+
+    if(d.size() == 0){
+        cout << "-1\n";
+    }
+    else {
+        cout << d.size();
+    }
 
     return 0;
 }
