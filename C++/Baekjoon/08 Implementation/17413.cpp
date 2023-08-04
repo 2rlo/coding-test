@@ -1,4 +1,4 @@
-// 백준 17413 파일 정리
+// 백준 17413 단어 뒤집기2
 
 #include <iostream>
 #include <string>
